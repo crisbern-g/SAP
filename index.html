@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animations.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-5">
+                <!-- Program Counter -->
+                <div class="row module-container d-flex justify-content-center align-items-center no-bottom-arrow">
+                    <div class="module d-flex flex-column justify-content-center align-items-center">
+                        <div class="module-title">
+                            <h6>Program Counter</h6>
+                        </div>
+
+                        <div class="module-value d-flex justify-content-center align-items-center">
+                            <h6 id="pcValue" class="zoom-in">0000</h6>
+                        </div>
+                    </div>
+
+                    <div class="side-arrow-container flex-column d-flex">
+                        <img id="pcSideArrow" src="images/arrow-right-4.png" alt="">
+                    </div>
+                </div>
+
+                <!-- INPUT and MAR -->
+                <div class="row module-container flex-column d-flex justify-content-center align-items-center">
+                    <div class="module d-flex flex-column justify-content-center align-items-center">
+                        <div class="module-title">
+                            <h6>Input and MAR</h6>
+                        </div>
+
+                        <div class="module-value d-flex justify-content-center align-items-center">
+                            <h6 id="marValue">----</h6>
+                        </div>
+                    </div>
+
+                    <div class="side-arrow-container flex-column d-flex">
+                        <img id="marSideArrow" src="images/arrow-left-4.png" alt="">
+                    </div>
+
+                    <div class="arrow-container d-flex justify-content-center">
+                        <img id="marDownArrow" src="images/arrow-down-8.png" alt="">
+                    </div>
+                </div>
+
+                <!-- 16x8 RAM -->
+                <div class="row module-container d-flex justify-content-center align-items-center no-bottom-arrow">
+                    <div class="module d-flex flex-column justify-content-center align-items-center">
+                        <div class="module-title">
+                            <h6>16x8 RAM</h6>
+                        </div>
+
+                        <div class="module-value d-flex justify-content-center align-items-center">
+                            <h6 id="ramValue">---- ----</h6>
+                        </div>
+                    </div>
+
+                    <div class="side-arrow-container flex-column d-flex">
+                        <img id="ramSideArrow" src="images/arrow-right-8.png" alt="">
+                    </div>
+                </div>
+
+                <!-- Instruction Register -->
+                <div class="row module-container d-flex justify-content-center align-items-center">
+                    <div class="module d-flex flex-column justify-content-center align-items-center">
+                        <div class="module-title">
+                            <h6>Instruction Register</h6>
+                        </div>
+
+                        <div class="module-value d-flex justify-content-center align-items-center">
+                            <h6 id="irValue">---- ----</h6>
+                        </div>
+                    </div>
+
+                    <div class="side-arrow-container flex-column d-flex">
+                        <img id="irArrow8" src="images/arrow-left-8.png" alt="">
+                        <img id="irArrow4" src="images/arrow-right-4.png" alt="">
+                    </div>
+
+                    <div class="arrow-container d-flex justify-content-center">
+                        <img id="irDownArrow" src="images/arrow-down-4.png" alt="">
+                    </div>
+                </div>
+
+                <!-- Controller/Sequence -->
+                <div class="row module-container d-flex justify-content-center align-items-center">
+                    <div class="module d-flex flex-column justify-content-center align-items-center">
+                        <div class="module-title">
+                            <h6>Controller/Sequence</h6>
+                        </div>
+
+                        <div class="module-value d-flex justify-content-center align-items-center">
+                            <h6 id="controllerValue">----</h6>
+                        </div>
+                    </div>
+
+                    <div class="arrow-container d-flex justify-content-center">
+                        <img src="images/arrow-down-12.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-2 d-flex justify-content-center">
+                <div id="w-bus"><b>W-BUS</b></div>
+            </div>
+
+            <div class="col-5">
+                <!-- Accumulator -->
+                <div class="row module-container d-flex justify-content-center align-items-center">
+                    <div class="row module-container d-flex justify-content-center align-items-center">
+                        <div class="module d-flex flex-column justify-content-center align-items-center">
+                            <div class="module-title">
+                                <h6>Accumulator</h6>
+                            </div>
+    
+                            <div class="module-value d-flex justify-content-center align-items-center">
+                                <h6>00000000</h6>
+                            </div>
+                        </div>
+    
+                        <div class="side-arrow-container-left flex-column d-flex">
+                            <img src="images/arrow-doublehead-8 copy.png" alt="">
+                        </div>
+
+                        <div class="arrow-container d-flex justify-content-center">
+                            <img src="images/arrow-down-8.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Adder/Subtractor -->
+                <div class="row module-container d-flex justify-content-center align-items-center">
+                    <div class="module d-flex flex-column justify-content-center align-items-center">
+                        <div class="module-title">
+                            <h6>Adder/Subtractor</h6>
+                        </div>
+
+                        <div class="module-value d-flex justify-content-center align-items-center">
+                            <h6>00000000</h6>
+                        </div>
+                    </div>
+
+                    <div class="side-arrow-container-left flex-column d-flex">
+                        <img src="images/arrow-left-8.png" alt="">
+                    </div>
+
+                    <div class="arrow-container d-flex justify-content-center">
+                        <img src="images/arrow-up-8.png" alt="">
+                    </div>
+                </div>
+
+                <!--Register B  -->
+                <div class="row module-container d-flex justify-content-center align-items-center no-bottom-arrow">
+                    <div class="module d-flex flex-column justify-content-center align-items-center">
+                        <div class="module-title">
+                            <h6>Register B</h6>
+                        </div>
+
+                        <div class="module-value d-flex justify-content-center align-items-center">
+                            <h6>00000000</h6>
+                        </div>
+                    </div>
+
+                    <div class="side-arrow-container-left flex-column d-flex">
+                        <img src="images/arrow-right-8.png" alt="">
+                    </div>
+                </div>
+                
+                <!-- Output Register -->
+                <div class="row module-container d-flex justify-content-center align-items-center">
+                    <div class="module d-flex flex-column justify-content-center align-items-center">
+                        <div class="module-title">
+                            <h6>Output Register</h6>
+                        </div>
+
+                        <div class="module-value d-flex justify-content-center align-items-center">
+                            <h6>00000000</h6>
+                        </div>
+                    </div>
+
+                    <div class="side-arrow-container-left flex-column d-flex">
+                        <img src="images/arrow-right-8.png" alt="">
+                    </div>
+
+                    <div class="arrow-container d-flex justify-content-center">
+                        <img src="images/arrow-down-8.png" alt="">
+                    </div>
+                </div>
+
+                <!-- Binary Display -->
+                <div class="row module-container d-flex justify-content-center align-items-center">
+                    <div class="module d-flex flex-column justify-content-center align-items-center">
+                        <div class="module-title">
+                            <h6>Binary Display</h6>
+                        </div>
+
+                        <div class="module-value d-flex justify-content-center align-items-center">
+                            <h6>00000000</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="actions.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+</body>
+</html>

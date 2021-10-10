@@ -1,0 +1,85 @@
+.slide-right{
+    animation-name: slide-right;
+    animation-duration: 1000ms;
+}
+
+.slide-left{
+    animation-name: slide-left;
+    animation-duration: 1000ms;
+}
+
+.slide-down{
+    animation-name: slide-down;
+    animation-duration: 1000ms;
+}
+
+.slide-up{
+    animation-name: slide-up;
+    animation-duration: 1000ms;
+}
+
+.zoom-in{
+    animation-name: zoom-in;
+    animation-duration: 1000ms;
+}
+
+/* KEYFRANES */
+@keyframes slide-right{
+    0%{
+        transform: translate(0);
+    }
+    50%{
+        transform: translateX(50%);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+
+@keyframes slide-left{
+    0%{
+        transform: translate(0);
+    }
+    50%{
+        transform: translateX(-30%);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+
+@keyframes slide-down{
+    0%{
+        transform: translate(0);
+    }
+    50%{
+        transform: translateY(20%);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+
+@keyframes slide-up{
+    0%{
+        transform: translate(0);
+    }
+    50%{
+        transform: translateY(-20%);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+
+@keyframes zoom-in{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
